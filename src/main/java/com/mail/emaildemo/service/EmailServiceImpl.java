@@ -6,13 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.mail.emaildemo.config.EmailConfig;
 import com.mail.emaildemo.model.EmailResponse;
 
 @Service
-@Transactional
 public class EmailServiceImpl implements EmailService {
 	
 	@Autowired
